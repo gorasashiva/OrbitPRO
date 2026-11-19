@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f1218" />
+    <title>Orbit Pro Charts</title>
+  </head>
+  <body>
+    <div class="app">
+      <header id="topbar" class="topbar" aria-label="Chart toolbar"></header>
+      <div class="main">
+        <nav id="draw-toolbar" class="draw-toolbar" aria-label="Drawing tools"></nav>
+        <section class="center" aria-label="Charts">
+          <div id="replay-bar" class="replay-bar" hidden></div>
+          <div id="chart-grid" class="chart-grid"></div>
+          <div id="range-bar" class="range-bar"></div>
+          <section id="bottom-panel" class="bottom-panel" aria-label="Trading panel">
+            <div class="bottom-head"></div>
+            <div class="bottom-body"></div>
+          </section>
+        </section>
+        <aside id="sidebar" class="sidebar" aria-label="Market panels">
+          <div class="sidebar-body"></div>
+          <div class="sidebar-rail" role="tablist" aria-label="Panels"></div>
+        </aside>
+      </div>
+      <footer class="statusbar">
+        <span>Binance public market data · Paper trading only · Not investment advice</span>
+        <span>Charts by <a href="https://www.tradingview.com/lightweight-charts/" target="_blank" rel="noreferrer">Lightweight Charts™</a></span>
+      </footer>
+    </div>
+    <script type="module" src="/src/chartApp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+# Orbit Pro repository: only the charting platform is tracked.
+# Everything else in this folder stays local: the separate TradingView Co-Pilot bot (src/*.js,
+# Pine scripts, config/, scripts/), private settings (.env) and personal trading data (data/).
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/vite.config.js
+!/package.json
+!/package-lock.json
+!/src/
+/src/*
+!/src/chartApp.js
+!/src/chartStyles.css
+!/src/pro/
+!/src/candl/
+.DS_Store
+node_modules/
+dist/

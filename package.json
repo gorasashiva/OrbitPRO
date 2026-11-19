@@ -1,0 +1,22 @@
+{
+  "name": "tradingview-copilot",
+  "version": "0.1.0",
+  "description": "Watches TradingView charts for a Pine Script setup and sends trade ideas (with chart snapshot) to Telegram.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "signals": "node --env-file=.env src/strategySignals.js",
+    "setup:mcp": "bash scripts/setup-mcp.sh",
+    "check": "tv status",
+    "chart": "vite --host 127.0.0.1",
+    "build:chart": "vite build",
+    "preview:chart": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "lightweight-charts": "^5.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
